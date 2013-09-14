@@ -2,9 +2,13 @@
 A couple of small programs and script for synchronizing multiple audio and
 video files. 
 
+Demo video:
+
+	http://www.youtube.com/watch?v=bCCMUavMBMg
+
 Here is a typical example workflow:
 
-1.) record video
+1.) record videos
 
 	-> handycam.mp4 (audio and video)
 	-> webcam1.mp4 (video only)

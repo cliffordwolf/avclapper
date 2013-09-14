@@ -1,0 +1,30 @@
+
+A couple of small programs and script for synchronizing multiple audio and
+video files. 
+
+Here is a typical example workflow:
+
+1.) record video
+
+	-> handycam.mp4 (audio and video)
+	-> webcam1.mp4 (video only)
+	-> webcam2.mp4 (video only)
+
+	there should be visual markers (use avclapper.html on a handheld
+	device) in the video only files. The tones from avclapper.html
+	must be audible load and clear on the audio track.
+
+2.) analyze
+
+	avclapper_audio handycam.mp4 | tee handycam.mrk
+	avclapper_video webcam2.mp4 | tee webcam2.mrk
+	avclapper_video webcam2.mp4 | tee webcam2.mrk
+
+	cat handycam.mrk webcam2.mrk webcam2.mrk | avclapper_analyze
+
+3.) execute the avconv command line suggested by avclapper_analyze
+
+	-> out000.mp4
+	-> out001.mp4
+	-> out002.mp4
+

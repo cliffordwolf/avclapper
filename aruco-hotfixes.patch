@@ -1,0 +1,61 @@
+--- aruco-1.2.4/utils/aruco_create_board.cpp	(revision 1475)
++++ aruco-1.2.4/utils/aruco_create_board.cpp	(revision 1504)
+@@ -27,8 +27,8 @@
+ ********************************/
+ #include "board.h"
+ #include <cstdio>
+-#include <opencv/cv.h>
+-#include <opencv/highgui.h>
++#include <opencv2/opencv.hpp>
++#include <opencv2/highgui/highgui.hpp>
+ #include "arucofidmarkers.h"
+ using namespace std;
+ using namespace cv;
+--- aruco-1.2.4/utils/aruco_simple_board.cpp	(revision 1475)
++++ aruco-1.2.4/utils/aruco_simple_board.cpp	(revision 1504)
+@@ -28,8 +28,8 @@
+ #include <iostream>
+ #include <fstream>
+ #include <sstream>
+-#include <opencv/cv.h>
+-#include <opencv/highgui.h>
++#include <opencv2/opencv.hpp>
++#include <opencv2/highgui/highgui.hpp>
+ #include "aruco.h"
+ #include "boarddetector.h"
+ #include "cvdrawingutils.h"
+--- aruco-1.2.4/utils/common.h	(revision 1475)
++++ aruco-1.2.4/utils/common.h	(revision 1504)
+@@ -27,7 +27,7 @@
+ ********************************/
+ #ifndef _COMMON_ARUCO_
+ #define _COMMON_ARUCO_
+-#include <opencv/cv.h>
++#include <opencv2/opencv.hpp>
+ using namespace cv;
+ /**This function reads the matrix intrinsics and the distorsion coefficients from a file.
+  * The format of the file is
+--- aruco-1.2.4/src/markerdetector.cpp	(revision 1475)
++++ aruco-1.2.4/src/markerdetector.cpp	(revision 1504)
+@@ -26,8 +26,8 @@
+ or implied, of Rafael Muñoz Salinas.
+ ********************************/
+ #include "markerdetector.h"
+-#include <opencv/cv.h>
+-#include <opencv/highgui.h>
++#include <opencv2/opencv.hpp>
++#include <opencv2/highgui/highgui.hpp>
+ #include <iostream>
+ #include <fstream>
+ #include "arucofidmarkers.h"
+--- aruco-1.2.4/src/cameraparameters.cpp	(revision 1475)
++++ aruco-1.2.4/src/cameraparameters.cpp	(revision 1504)
+@@ -28,7 +28,7 @@
+ #include "cameraparameters.h"
+ #include <fstream>
+ #include <iostream>
+-#include <opencv/cv.h>
++#include <opencv2/opencv.hpp>
+ using namespace std;
+ namespace aruco
+ {

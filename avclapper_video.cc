@@ -93,7 +93,7 @@ void hue_history_analyze()
 	if (fail_counter >= 3)
 		return;
 
-	double corrected_start_time = (hue_history.back().second / 1000) - 6 * COLOR_MARK_STEP_MS / 1000.0;
+	double corrected_start_time = (hue_history.back().second / 1000) - 7 * COLOR_MARK_STEP_MS / 1000.0;
 	printf("%10.2f ABABAB\n", corrected_start_time);
 	hue_history.clear();
 }

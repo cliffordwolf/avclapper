@@ -1,0 +1,16 @@
+<html><head>
+<title>countdown</title>
+<script><!--
+function countdown()
+{
+	var i = 13;
+	function go() {
+		document.getElementById("X").innerText = --i;
+		window.setTimeout(i ? go : (function(){ document.getElementById("X").innerText = "X"; }), 1000);
+	}
+	go();
+}
+//--></script>
+</head><body onclick="countdown()">
+<center style="position:fixed; top:0; left:0; right:0; font-size:400px;" id="X">X</center>
+</body></html>
